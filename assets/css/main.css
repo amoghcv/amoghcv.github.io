@@ -1915,6 +1915,16 @@
             padding: 1em 0 2em 0;
         }
 
+        .box .content p.p-alt-body-tos {
+            color: #4d4d4d;
+            width: 100%;
+            font-size: 1em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+            margin: 0 0 0 0;
+            padding: 1em 0 2em 0;
+        }
+
 		.box > :last-child,
 		.box > :last-child > :last-child,
 		.box > :last-child > :last-child > :last-child {
@@ -2493,6 +2503,18 @@
                 padding: 0.1rem 0;
                 margin-top: 0.5rem;
                 margin-left: 2rem;
+			}
+
+			ul.alt-tos li.alt-tos {
+                color: #4d4d4d;
+                width: 100%;
+                font-size: 1em;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: justify;
+				border-top: 0;
+                padding: 0 4em 0 0;
+                margin-top: 0;
+                margin-left: 2em;
 			}
 
 				ul.alt li:first-child {
@@ -3233,6 +3255,16 @@
             position: relative;
 		}
 
+        .wrapper.style3.ym {
+			background-color: #000;
+			color: #ffffff;
+			background-image: url(../../images/ym/Google_1024x500_cropped.png);
+			background-size: cover;
+			background-attachment: local;
+			background-position: center;
+            position: relative;
+		}
+        
 			.wrapper.style3 input, .wrapper.style3 select, .wrapper.style3 textarea {
 				color: #ffffff;
 			}
