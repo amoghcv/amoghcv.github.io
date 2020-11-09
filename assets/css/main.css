@@ -3272,8 +3272,8 @@
 			background-size: cover;
 			background-attachment: local;
 			background-position: center;
-			min-height: 50vh;
-			height: 50vh !important;
+			min-height: 65vh;
+			height: 65vh !important;
             position: relative;
 		}
         
@@ -3294,7 +3294,7 @@
 			}
 
 			.wrapper.style3 blockquote {
-				border-left-color: rgba(255, 255, 255, 0.25);
+				border-left-color: rgba(255, 255, 255, 0.5);
 			}
 
 			.wrapper.style3 code {
@@ -3469,7 +3469,7 @@
 			}
 
 			.wrapper.style3 header p {
-				color: #999999;
+				color: #bebebe;
 			}
 
 			.wrapper.style3 table tbody tr {
