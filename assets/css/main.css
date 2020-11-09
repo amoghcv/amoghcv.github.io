@@ -3272,8 +3272,8 @@
 			background-size: cover;
 			background-attachment: local;
 			background-position: center;
-			min-height: 65vh;
-			height: 65vh !important;
+			min-height: 70vh;
+			height: 70vh !important;
             position: relative;
 		}
         
@@ -4654,10 +4654,20 @@
 .stack-top {
 	position: absolute;
 	z-index: 9;
-	margin: 20px; /* for demo purpose  */
 }
 
 .carousel-img {
+	margin: auto auto;
 	max-width: 300px; 
 	clip-path: inset(0% 0% 0% 0% round 20px);
+}
+
+.align-center-mobile {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	justify-content: center;
 }
