@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="assets/css/Landing-page.css">
+	</head>
+	<body>
+		<header class="pageind" id="first-sec">
+			<div class="lp-left-header">
+				<section class="lp-left-image-wrapper">
+					<h1>Space</h1>
+					<h1>Alien</h1>
+				</section>
+			</div>
+			<div class="lp-right-header">
+				<a href="#key-ftrs">Key Features</a>
+				<a href="#scrnshts">Screenshots</a>
+				<a href="#press">Press</a>
+			</div>
+			<div class="lp-mb-right-header">
+				<button onclick="mbdrawer()">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="lp-mb-nav-contents" id="lp-mb-nav-drawer">
+					<button onclick="mbdrawer()">
+						<i class="fa-solid fa-x"></i>
+					</button>
+					<a onclick="mbdrawer()" href="#key-ftrs">Key Features</a>
+					<a onclick="mbdrawer()" href="#scrnshts">Screenshots</a>
+					<a onclick="mbdrawer()" href="#press">Press</a>
+				</div>
+			</div>
+		</header>
+		<div class="lp-game-desc-container">
+			<section class="lp-game-desc-sec1">
+				<h1>Space Alien</h1>
+				<h3>New game from Space-It Industries ltd.</h3>
+				<div class="lp-game-desc-mobile-wrapper">
+					<img src="/images/landing-page/phn-img.webp">
+				</div>
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+				<div class="lp-game-desc-sec1-stores">
+					<a href="#">
+						<img src="/images/landing-page/app-str-img.webp">
+					</a>
+					<a href="#">
+						<img src="/images/landing-page/google-ply-img.webp">
+					</a>
+				</div>
+				<div class="lp-mb-game-social-wrap">
+					<a href="#">
+						<img src="/images/landing-page/scl-fb.webp">
+					</a>
+					<a href="#">
+						<img src="/images/landing-page/scl-twtr.webp">
+					</a>
+					<a href="#">
+						<img src="/images/landing-page/scl-ytb.webp">
+					</a>
+				</div>
+			</section>
+			<section class="lp-game-desc-sec2">
+				<div class="lp-game-desc-sec2-wrapper">
+					<img src="/images/landing-page/phn-img.webp">
+				</div>
+			</section>
+		</div>
+		<div class="lp-key-ftrs-container pageind" id="key-ftrs">
+			<section class="lp-key-ftrs-top-img"></section>
+			<section class="lp-key-ftrs-contents">
+				<div class="lp-key-ftrs-content-sec1">
+					<img class="lp-ftr-animate" src="/images/landing-page/key-ftr-anim-img.webp">
+				</div>
+				<div class="lp-key-ftrs-content-sec2">
+					<h1>Key Features</h1>
+					<h3>Version 6.221 (20.10.2035)</h3>
+					<ul>
+						<li>The ultimate pen and paper RPG simulation experience.</li>
+						<li>Level up and get your hands on more gold to unlock epic items and gear for your party.</li>
+						<li>Fight and explore your way through a perilous fantasy world to defeat the dark mage.</li>
+						<li>As the game master, you can set up the fights yourself and choose how many monsters to battle.</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="lp-game-scrns-container pageind" id="scrnshts">
+			<h1>Game Screens</h1>
+			<section class="lp-game-imgs-wrap">
+				<div class="lp-game-img">
+					<div class="lp-game-img-wrapper">
+						<button class="lp-game-hearts" onclick="likeSwap1()">
+							<i class="fa-solid fa-heart sldhrt"></i>
+							<i class="fa-regular fa-heart lthrt"></i>
+						</button>
+						<p class="lp-game-like-count">1</p>
+						<i class="fa-solid fa-share"></i>
+					</div>
+					<img id="first-screen-shot-of-the-game" src="/images/landing-page/scr-sht-1.webp">
+				</div>
+				<div class="lp-game-img">
+					<div class="lp-game-img-wrapper">
+						<button class="lp-game-hearts" onclick="likeSwap2()">
+							<i class="fa-solid fa-heart sldhrt"></i>
+							<i class="fa-regular fa-heart lthrt"></i>
+						</button>
+						<p class="lp-game-like-count">1</p>
+						<i class="fa-solid fa-share"></i>
+					</div>
+					<img src="/images/landing-page/scr-sht-2.webp">
+				</div>
+				<div class="lp-game-img">
+					<div class="lp-game-img-wrapper">
+						<button class="lp-game-hearts" onclick="likeSwap3()">
+							<i class="fa-solid fa-heart sldhrt"></i>
+							<i class="fa-regular fa-heart lthrt"></i>
+						</button>
+						<p class="lp-game-like-count">1</p>
+						<i class="fa-solid fa-share"></i>
+					</div>
+					<img src="/images/landing-page/scr-sht-3.webp">
+				</div>
+				<div class="lp-game-img">
+					<div class="lp-game-img-wrapper">
+						<button class="lp-game-hearts" onclick="likeSwap4()">
+							<i class="fa-solid fa-heart sldhrt"></i>
+							<i class="fa-regular fa-heart lthrt"></i>
+						</button>
+						<p class="lp-game-like-count">1</p>
+						<i class="fa-solid fa-share"></i>
+					</div>
+					<img src="/images/landing-page/scr-sht-4.webp">
+				</div>
+			</section>
+		</div>
+		<section class="lp-game-screen-modal">
+			<div class="lp-game-scrn-mdl-top">
+				<section class="lp-game-scrn-mdl-top-sec1">
+					<button onclick="toggleFullScreen()">
+						<i class="fa-solid fa-up-right-and-down-left-from-center" id="max"></i>
+						<i class="fa-solid fa-down-left-and-up-right-to-center" id="min"></i>
+					</button>
+					<button id="lp-game-mb-btn">
+						<i class="fa-solid fa-arrow-left-long"></i>
+					</button>
+					<i class="fa-solid fa-share"></i>
+					<i class="fa-regular fa-heart"></i>
+				</section>
+				<section class="lp-game-scrn-mdl-top-sec2">
+					<button id="lp-game-btn">
+						<i class="fa-solid fa-x"></i>
+					</button>
+					<button id="lp-game-btn1">
+						<i class="fa-solid fa-x"></i>
+					</button>
+				</section>
+			</div>
+			<div class="lp-game-full-img">
+				<div class="lp-game-full-img-sec1">
+					<img src="/images/landing-page/scr-sht-1.webp">
+				</div>
+				<div class="lp-game-full-img-sec2">
+					<h2>I’m an image title</h2>
+					<h2>Describe your image here. Use catchy text to tell people the story behind the photo.<br>Go to “Manage Media” to add your content.</h2>
+				</div>
+			</div>
+		</section>
+		<div class="lp-press-review-container pageind" id="press">
+			<h1>Press Review</h1>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="lp-review-stars">
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<h1>Space Geek</h1>
+					<h5>May 12, 2035</h5>
+					<p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</p>
+				</div>
+				<div class="mySlides fade">
+					<div class="lp-review-stars">
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<h1>Gamespot</h1>
+					<h5>May 12, 2035</h5>
+					<p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</p>
+				</div>
+				<div class="mySlides fade">
+					<div class="lp-review-stars">
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+						<i class="fa-solid fa-star lp-reviewed-star"></i>
+					</div>
+					<h1>Touch Arcade</h1>
+					<h5>May 12, 2035</h5>
+					<p>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”</p>
+				</div>
+			</div>
+			<div class="lp-review-dots">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<div class="lp-social-float-container">
+			<a href="#">
+				<img src="/images/landing-page/scl-fb.webp">
+			</a>
+			<a href="#">
+				<img src="/images/landing-page/scl-twtr.webp">
+			</a>
+			<a href="#">
+				<img src="/images/landing-page/scl-ytb.webp">
+			</a>
+		</div>
+		<div class="lp-scroll-indicators">
+			<a href="#first-sec" class="active1"></a>
+			<a href="#key-ftrs"></a>
+			<a href="#scrnshts"></a>
+			<a href="#press"></a>
+		</div>
+		<div class="lp-footer-container">
+			<footer>
+				<div class="lp-footer-dwnld-play">
+					<h1>Download &amp;<br>
+						Play Now!</h1>
+				</div>
+				<div class="lp-footer-stores">
+					<img src="/images/landing-page/app-str-img.webp">
+					<img src="/images/landing-page/google-ply-img.webp">
+				</div>
+				<p>© 2022 by Space Alien. Powered and secured by Longbow Games</p>
+			</footer>
+		</div>
+		<script src="/assets/js/Landing-page.js"></script>
+		<script src="/assets/js/landingPage-imageViewer.js"></script>
+		<script src="https://kit.fontawesome.com/f7fa46bc0e.js" crossorigin="anonymous"></script>
+	</body>
+</html>
