@@ -250,7 +250,7 @@
 					<div class="enqu-card" id="contact-page">
 						<h2>Get in Touch</h2>
 						<p>Send Us Your Details below to Get in Touch With Us</p>
-						<form class="contactUsForm" action="#">
+						<form>
 							<div class="enq-names">
 								<div class="f-name">
 									<label for="First-Name">First Name *</label>
@@ -274,19 +274,19 @@
 								<textarea id="Message" name="Message" rows="4" cols="50">
 								</textarea>
 							</div>
-							<span style="text-align:center;font-size:15px;margin-bottom:unset;" id="form-message"></span>
-							<input class="enq-btn" type="submit" value="Submit">
+							<p style="text-align:center;font-size:15px;margin-bottom:unset;" id="form-message"></p>
+							<input class="enq-btn" type="button" onclick="submitForm()" value="Submit">
 						</form>
 					</div>
 				</div>
 				<div class="our-team2-letter">
 					<div class="our-team2-letter-card">
 						<h3>Subscribe to Our Newsletter</h3>
-						<form action="#" class="news-form">
-							<label for="Email">Email *</label>
+						<form class="news-form">
+							<label for="newsemail">Email *</label>
 							<br>
-							<input class="newsemail" type="email" id="newsemail" name="Email">
-							<input class="news-form-btn" type="submit" value="Join">
+							<input class="newsemail" type="email" id="newsemail" name="newsemail">
+							<input class="news-form-btn" type="button" value="Join" onclick="submitNewsLetter()">
 						</form>
 						<p style="text-align: center; font-size: 15px; margin-bottom: unset;" id="news-letter-message"></p>
 					</div>
@@ -345,8 +345,7 @@
 			</div>
 		</footer>
 		
-		<script src="/assets/js/contactFormHandlers.js"></script>
-		<script src="/assets/js/newsLetterFormHandler.js"></script>
+		<script src="/assets/js/FormHandlers.js"></script>
 		<script src="/assets/js/animate.js"></script>
 		<script src="https://kit.fontawesome.com/f7fa46bc0e.js" crossorigin="anonymous"></script>
 	</body>

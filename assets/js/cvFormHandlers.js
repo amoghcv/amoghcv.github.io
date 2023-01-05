@@ -1,31 +1,51 @@
-//Contact Form
-const form = document.querySelector(".cvForm");
-var statusTxt = document.querySelector(".cvForm p");
-// statusTxt = form.querySelector(".contactUsForm span");
-form.onsubmit = (e)=>{
-  e.preventDefault();
-  statusTxt.style.color = "#0D6EFD";
-  statusTxt.style.display = "block";
-  statusTxt.innerText = "Sending your message...";
-//   form.classList.add("disabled");
+let cvSubmitForm = () =>{
+    let firstName = document.getElementById("First-Name");
+    let lastName = document.getElementById("Last-Name");
+    let Email = document.getElementById("Email");
+    let phone = document.getElementById("Phone");
+    let position = document.getElementById("Position");
+    let cvurl = document.getElementById("cvUrl");
+    let lnurl = document.getElementById("LinkedIn-URL");
+    let Message = document.getElementById("Message");
+    let submitMessage1 = document.getElementById("form-message1");
+    let formData2 = new FormData();
+    formData2.append('First-Name',firstName.value);
+    formData2.append('Last-Name',lastName.value);
+    formData2.append('Email',Email.value);
+    formData2.append('Phone',phone.value);
+    formData2.append('Position',position.value);
+    formData2.append('cvURL',cvurl.value);
+    formData2.append('lnURL',lnurl.value);
+    formData2.append('Message',Message.value);
+    if(firstName.value != "" && lastName.value != "" && Email.value != "" && position.value != "" && cvurl.value != ""){
 
-  let xhr = new XMLHttpRequest();
-  xhr.open("POST", "/assets/php/message2.php", true);
-  xhr.onload = ()=>{
-    if(xhr.readyState == 4 && xhr.status == 200){
-      let response = xhr.response;
-      if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
-        statusTxt.style.color = "red";
-      }else{
-        form.reset();
+        submitMessage1.style.color = "green";
+        submitMessage1.innerHTML = `${firstName.value} the request is successfully submitted`;
         setTimeout(()=>{
-          statusTxt.style.display = "none";
-        }, 3000);
-      }
-      statusTxt.innerText = response;
-    //   form.classList.remove("disabled");
+            submitMessage1.innerHTML = "";
+        },5000);
+
+        fetch("https://formspree.io/f/xnqyagre",{
+            method:'POST',
+            body:formData2
+        }).then(response=>{
+            return response.json();
+        });
+
+        firstName.value = "";
+        lastName.value = "";
+        Email.value = "";
+        phone.value = "";
+        position.value = "";
+        cvurl.value = "";
+        lnurl.value = "";
+        Message.value = "";
     }
-  }
-  let formData = new FormData(form);
-  xhr.send(formData);
+    else{
+        submitMessage1.style.color = "orange";
+        submitMessage1.innerHTML = "Please fill all the inputs";
+        setTimeout(()=>{
+            submitMessage1.innerHTML = "";
+        },5000);
+    }
 }
