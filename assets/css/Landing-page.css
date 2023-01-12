@@ -18,7 +18,7 @@ html {
 body {
     width: 100%;
     height: auto;
-    background-image: url('/images/landing-page/landing-page-bg.webp');
+    background-image: url('/images/landing-page/island_cropped_2_blur.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,10 +37,10 @@ header {
 }
 .lp-left-header {
     width: 14%;
-    height: auto;
+    height: 100%;
     margin-left: 17.5%;
 }
-.lp-left-image-wrapper {
+/* .lp-left-image-wrapper {
     width: 100%;
     height: auto;
     background-image: url('/images/landing-page/hdr-img.webp');
@@ -58,6 +58,9 @@ header {
     color: #FFAE7E;
     font-weight: lighter;
     font-size: 1.8rem;
+} */
+.lp-left-image-wrapper img {
+    width: 45%;
 }
 .lp-mb-right-header {
     display: none;
@@ -75,8 +78,8 @@ header {
     text-decoration: none;
     font-family: 'Reklame-medium';
     font-weight: lighter;
-    font-size: 1.3rem;
-    color: #FFAE7E;
+    font-size: 1.5rem;
+    color: white;
     margin: 0 0.7rem;
 }
 
@@ -127,7 +130,7 @@ header {
     display: none;
 }
 .lp-game-desc-sec2 {
-    width: 27%;
+    width: 35%;
     height: auto;
     padding-top: 2rem;
     padding-left: 5%;
@@ -139,10 +142,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/landing-page/phn-bg.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.lp-game-desc-sec2-wrapper img {
+    width: 60%;
 }
 .lp-game-desc-mobile-wrapper {
     width: 100%;
@@ -150,10 +153,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/landing-page/phn-bg.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     display: none;
 }
 
@@ -184,11 +183,15 @@ header {
 .lp-key-ftrs-content-sec1 {
     width: 45%;
     height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
     text-align: right;
 }
 .lp-key-ftrs-content-sec1 img {
     width: 40%;
     margin-right: 4.5rem;
+    margin-top: -9rem;
 }
 .lp-ftr-animate {
     position: relative;
@@ -307,6 +310,7 @@ header {
 }
 .lp-game-img {
     width: 22.5%;
+    height: auto;
     position: relative;
     cursor: pointer;
 }
@@ -321,7 +325,7 @@ header {
 }
 .lp-game-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .lp-game-screen-modal {
     width: 100%;
@@ -403,9 +407,17 @@ header {
     justify-content: center;
     align-items: flex-start;
 }
+.lp-game-full-img-sec1 img {
+    width: 30%;
+    height: 90%;
+}
 .lp-game-full-img-sec1-full-scrn {
     width: 100%;
-    padding-top: 5%;
+    padding-top: 2%;
+}
+.lp-game-full-img-sec1-full-scrn img {
+    width: 25%;
+    height: 90%;
 }
 .lp-game-full-img-sec2 {
     width: 30%;
@@ -640,7 +652,7 @@ footer p {
 
 /* Footer styles ends here */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     /* Header styles starts from here */
 
@@ -727,10 +739,11 @@ footer p {
     padding: 12% 0;
     display: flex;
    }
-   /* .lp-game-desc-mobile-wrapper img {
+   .lp-game-desc-mobile-wrapper img {
     width: 80%;
     height: auto;
-   } */
+    border-radius: 1rem;
+   }
    .lp-game-desc-sec1 h3 {
     width: 90%;
     margin: auto;
@@ -855,314 +868,6 @@ footer p {
     }
     .lp-game-scrn-mdl-top-sec1 button:nth-child(2) {
         display: block;
-        margin-left: 5%;
-    }
-    .lp-game-scrn-mdl-top-sec1 button .fa-arrow-left-long {
-        color: white;
-        font-size: 1.8rem;
-    }
-    .lp-game-scrn-mdl-top-sec1 {
-        width: 100%;
-    }
-    .lp-game-scrn-mdl-top-sec1 .fa-share {
-        margin: unset;
-        position: absolute;
-        right: 10%;
-        font-size: 1.5rem;
-    }
-    .lp-game-scrn-mdl-top-sec1 .fa-heart {
-        position: absolute;
-        right: 30%;
-        font-size: 1.5rem;
-    }
-    .lp-game-scrn-mdl-top-sec2 {
-        display: none;
-    }
-
-   /* Press review styles starts from here */
-
-   .lp-press-review-container {
-    padding: 2rem 0;
-   }
-   .lp-press-review-container h1 {
-    font-size: 2.4rem;
-   }
-
-   /* Press review slider starts from here */
-
-   .mySlides {
-    background-image: unset;
-    padding-top: 2.5rem;
-   }
-   .lp-review-stars {
-    width: 100%;
-   }
-   .mySlides h1 {
-    font-size: 2rem;
-    margin: 0.5rem 0;
-   }
-   .mySlides h5 {
-    margin-bottom: 1.5rem;
-   }
-   .mySlides p {
-    width: 90%;
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-   }
-   .lp-review-dots {
-    margin-top: unset;
-   }
-   .lp-social-float-container {
-    display: none;
-   }
-   .lp-scroll-indicators {
-    display: none;
-   }
-
-   /* Footer styles starts from here */
-    
-   footer {
-    margin-top: unset;
-   }
-   .lp-footer-dwnld-play {
-    width: 90%;
-    margin-top: 4rem;
-    padding: 0.5rem 0;
-   }
-   .lp-footer-dwnld-play h1 {
-    font-size: 1.4rem;
-   }
-   .lp-footer-stores {
-    width: 60%;
-    margin-top: 2rem;
-    flex-direction: column;
-    margin-bottom: 2rem;
-   }
-   .lp-footer-stores img {
-    margin-bottom: 1rem;
-   }
-   footer p {
-     text-align: center;
-     margin-bottom: 2rem;
-     margin-top: unset;
-   }
-
-}
-
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-   
-    /* Header styles starts from here */
-
-    .lp-left-header {
-        width: 50%;
-        margin-left: 7%;
-    }
-    .lp-left-image-wrapper h1 {
-        font-size: 1.3rem;
-    }
-   .lp-right-header {
-       display: none;
-   }
-   .lp-mb-right-header {
-    display: block;
-    margin-right: 5%;
-   }
-   .lp-mb-right-header button {
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-   }
-   .lp-mb-right-header button .fa-bars {
-    font-size: 1.8rem;
-    color: #FFAE7E;
-   }
-   .lp-mb-nav-contents {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 30%;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    background-color: #4A2359;
-    transition: all 0.4s ease-in-out;
-   }
-   .lp-mb-nav-contents button {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    right: 5%;
-    top: 6.5%;
-    cursor: pointer;
-   }
-   .lp-mb-nav-contents button .fa-x {
-     color: #FFAE7E;
-     font-size: 1.8rem;
-   }
-   .lp-mb-nav-contents a {
-    font-family: 'Reklame-medium';
-    text-decoration: none;
-    color: #FFAE7E;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-   }
-
-   /* Game description styles starts from here */
-
-   .lp-game-desc-container {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding-bottom: unset   ;
-   }
-   .lp-game-desc-sec1 {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding-left: unset;
-   }
-   .lp-game-desc-sec1 h1 {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    font-size: 2rem;
-   }
-   .lp-game-desc-mobile-wrapper {
-    width: 100%;
-    height: auto;
-    padding: 12% 0;
-    display: flex;
-   }
-   /* .lp-game-desc-mobile-wrapper img {
-    width: 80%;
-    height: auto;
-   } */
-   .lp-game-desc-sec1 h3 {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
-   .lp-game-desc-sec1 p {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: unset;
-   }
-   .lp-game-desc-sec1-stores {
-    width: 100%;
-    margin-top: 3rem;
-    margin-bottom: unset;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
-   .lp-mb-game-social-wrap {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    background-color: #7f4e91;
-   }
-   .lp-mb-game-social-wrap img {
-    margin-right: 1rem;
-   }
-   .lp-game-desc-sec2 {
-    display: none;
-   }
-
-   /* Key features styles starts from here */
-
-   .lp-key-ftrs-contents {
-    justify-content: center;
-    align-items: center;
-   }
-   .lp-key-ftrs-content-sec1 {
-    display: none;
-   }
-   .lp-key-ftrs-content-sec2 {
-       width: 85%;
-       padding-top: unset;
-       padding-bottom: 10rem;
-   }
-   .lp-key-ftrs-content-sec2 h1 {
-        font-size: 2.5rem;
-   }
-   .lp-key-ftrs-content-sec2 h3 {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-   }
-   .lp-key-ftrs-content-sec2 ul {
-        width: 90%;
-        margin: auto;
-   }
-   .lp-key-ftrs-content-sec2 li {
-    font-size: 1.1rem;
-   }
-
-   /* Game screens styles starts from here */
-
-   .lp-game-scrns-container {
-    padding-top: 2rem;
-    padding-bottom: unset;
-   }
-   .lp-game-scrns-container h1 {
-    font-size: 2.4rem;
-   }
-   .lp-game-imgs-wrap {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-   }
-   .lp-game-img {
-    width: 90%;
-    margin-bottom: 1rem;
-   }
-   .lp-game-img:first-child {
-    margin-left: unset;
-   }
-   .lp-game-img:last-child {
-    margin-right: unset;
-   }
-   .lp-game-full-img {
-    flex-direction: column;
-    overflow-y:scroll;
-   }
-   .lp-game-full-img-sec1 {
-    width: 100%;
-   }
-   .lp-game-full-img-sec1 img {
-    width: 70%;
-   }
-   .lp-game-full-img-sec2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-   .lp-game-full-img-sec2 h2 {
-    width: 90%;
-    font-size: 1.4rem;
-    line-height: 1.3;
-   }
-   .lp-game-full-img-sec2 h2:first-child {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    }
-    .lp-game-scrn-mdl-top-sec1 button:first-child {
-        display: none;
-    }
-    .lp-game-scrn-mdl-top-sec1 button:nth-child(2) {
         margin-left: 5%;
     }
     .lp-game-scrn-mdl-top-sec1 button .fa-arrow-left-long {
